@@ -1,0 +1,38 @@
+Cmp-Mod V01 Created by CvPcb (2014-01-10 BZR 4027)-stable date = Torsdag 05 Februari 2015 23:45:31
+
+BeginCmp
+TimeStamp = /54D11F78;
+Reference = U1001;
+ValeurCmp = Z8400;
+IdModule  = DIP-40__600_ELL;
+EndCmp
+
+BeginCmp
+TimeStamp = /54D12202;
+Reference = U1002;
+ValeurCmp = AT28C64B;
+IdModule  = DIP-32__600_ELL;
+EndCmp
+
+BeginCmp
+TimeStamp = /54D12D71;
+Reference = U1003;
+ValeurCmp = AS6C1008;
+IdModule  = DIP-32__600_ELL;
+EndCmp
+
+BeginCmp
+TimeStamp = /54D27D10;
+Reference = U1004;
+ValeurCmp = Z8420;
+IdModule  = DIP-40__600_ELL;
+EndCmp
+
+BeginCmp
+TimeStamp = /54D3E273;
+Reference = U1005;
+ValeurCmp = 74LS138;
+IdModule  = DIP-16__300_ELL;
+EndCmp
+
+EndListe
