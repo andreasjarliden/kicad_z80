@@ -1,4 +1,46 @@
-Cmp-Mod V01 Created by Cvpcb (2015-03-13 BZR 5510)-product   date = Lördag 14 Mars 2015 19:33:13
+Cmp-Mod V01 Created by Cvpcb (2015-03-13 BZR 5510)-product   date = Söndag 22 Mars 2015 09:39:37
+
+BeginCmp
+TimeStamp = /550E845D;
+Reference = C1;
+ValeurCmp = 0.1u;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E84A5;
+Reference = C2;
+ValeurCmp = 0.1u;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E84E2;
+Reference = C3;
+ValeurCmp = 0.1u;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E855B;
+Reference = C4;
+ValeurCmp = 0.1u;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E8561;
+Reference = C5;
+ValeurCmp = 0.1u;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E8567;
+Reference = C6;
+ValeurCmp = 0.1u;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
 
 BeginCmp
 TimeStamp = /54D66F64;
@@ -19,6 +61,13 @@ TimeStamp = /55045F71;
 Reference = P3;
 ValeurCmp = CONN_01X10;
 IdModule  = Pin_Headers:Pin_Header_Straight_1x10;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E7B87;
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
 EndCmp
 
 BeginCmp
