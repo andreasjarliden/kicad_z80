@@ -10,7 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -36,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date "5 feb 2015"
 Rev ""
@@ -1345,4 +1344,10 @@ Wire Wire Line
 	5900 6900 5750 6900
 Text GLabel 5900 6900 2    60   Input ~ 0
 CLK
+$Sheet
+S 9950 700  1100 600 
+U 568ED54E
+F0 "Timer" 60
+F1 "Timer.sch" 60
+$EndSheet
 $EndSCHEMATC
