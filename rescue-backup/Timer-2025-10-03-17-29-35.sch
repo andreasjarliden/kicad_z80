@@ -1,0 +1,421 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ownMemories
+LIBS:ownZilog
+LIBS:z80-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Z8430 U?
+U 1 1 568EE07F
+P 3500 2850
+F 0 "U?" H 3450 2050 60  0000 C CNN
+F 1 "Z8430" H 3500 2700 60  0000 C CNN
+F 2 "DIP-28__600_ELL" H 3500 4200 60  0000 C CNN
+F 3 "" H 2850 3450 60  0000 C CNN
+	1    3500 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2750 4400 2750
+Text GLabel 4400 2750 2    60   Input ~ 0
+~RESET
+Wire Wire Line
+	4250 2950 4400 2950
+Text GLabel 4400 2950 2    60   Input ~ 0
+CLK
+$Comp
+L CONN_01X04 P?
+U 1 1 568FE22F
+P 2050 3400
+F 0 "P?" H 2050 3650 50  0000 C CNN
+F 1 "Interrupt Daisy Chain CTC" V 2150 3400 50  0000 C CNN
+F 2 "" H 2050 3400 50  0000 C CNN
+F 3 "" H 2050 3400 50  0000 C CNN
+	1    2050 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 3250 2700 3250
+Wire Wire Line
+	2250 3350 2700 3350
+Wire Wire Line
+	2250 3450 2700 3450
+Wire Wire Line
+	2250 3550 2350 3550
+Text Label 2350 3550 0    60   ~ 0
+VCC
+$Comp
+L CONN_01X03 P?
+U 1 1 568FF40E
+P 6350 1350
+F 0 "P?" H 6350 1550 50  0000 C CNN
+F 1 "Outputs" V 6450 1350 50  0000 C CNN
+F 2 "" H 6350 1350 50  0000 C CNN
+F 3 "" H 6350 1350 50  0000 C CNN
+	1    6350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P?
+U 1 1 568FF456
+P 6350 2400
+F 0 "P?" H 6350 2650 50  0000 C CNN
+F 1 "Inputs" V 6450 2400 50  0000 C CNN
+F 2 "" H 6350 2400 50  0000 C CNN
+F 3 "" H 6350 2400 50  0000 C CNN
+	1    6350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 10k
+U 1 1 568FF491
+P 5150 2750
+F 0 "10k" V 5230 2750 50  0000 C CNN
+F 1 "R" V 5150 2750 50  0000 C CNN
+F 2 "" V 5080 2750 50  0000 C CNN
+F 3 "" H 5150 2750 50  0000 C CNN
+	1    5150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 10k
+U 1 1 568FF4D3
+P 5400 2750
+F 0 "10k" V 5480 2750 50  0000 C CNN
+F 1 "R" V 5400 2750 50  0000 C CNN
+F 2 "" V 5330 2750 50  0000 C CNN
+F 3 "" H 5400 2750 50  0000 C CNN
+	1    5400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 10k
+U 1 1 568FF50F
+P 5650 2750
+F 0 "10k" V 5730 2750 50  0000 C CNN
+F 1 "R" V 5650 2750 50  0000 C CNN
+F 2 "" V 5580 2750 50  0000 C CNN
+F 3 "" H 5650 2750 50  0000 C CNN
+	1    5650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 10k
+U 1 1 568FF53C
+P 5900 2750
+F 0 "10k" V 5980 2750 50  0000 C CNN
+F 1 "R" V 5900 2750 50  0000 C CNN
+F 2 "" V 5830 2750 50  0000 C CNN
+F 3 "" H 5900 2750 50  0000 C CNN
+	1    5900 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2950 5150 2900
+$Comp
+L GND #PWR?
+U 1 1 568FF738
+P 5150 2950
+F 0 "#PWR?" H 5150 2700 50  0001 C CNN
+F 1 "GND" H 5150 2800 50  0000 C CNN
+F 2 "" H 5150 2950 50  0000 C CNN
+F 3 "" H 5150 2950 50  0000 C CNN
+	1    5150 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2900 5900 2900
+Connection ~ 5400 2900
+Connection ~ 5650 2900
+Wire Wire Line
+	4250 2550 6150 2550
+Wire Wire Line
+	5150 2550 5150 2600
+Connection ~ 5150 2550
+Wire Wire Line
+	4250 2250 5400 2250
+Wire Wire Line
+	5400 2250 5400 2600
+Wire Wire Line
+	6150 2450 5400 2450
+Connection ~ 5400 2450
+Wire Wire Line
+	4250 1950 5650 1950
+Wire Wire Line
+	5650 1950 5650 2600
+Wire Wire Line
+	5650 2350 6150 2350
+Connection ~ 5650 2350
+Wire Wire Line
+	4250 1650 5900 1650
+Wire Wire Line
+	5900 1650 5900 2600
+Wire Wire Line
+	5900 2250 6150 2250
+Connection ~ 5900 2250
+Wire Wire Line
+	4250 1750 4400 1750
+Wire Wire Line
+	4400 1750 4400 1250
+Wire Wire Line
+	4400 1250 6150 1250
+Wire Wire Line
+	4250 2050 4500 2050
+Wire Wire Line
+	4500 2050 4500 1350
+Wire Wire Line
+	4500 1350 6150 1350
+Wire Wire Line
+	4250 2350 4600 2350
+Wire Wire Line
+	4600 2350 4600 1450
+Wire Wire Line
+	4600 1450 6150 1450
+Wire Wire Line
+	2700 2550 2500 2550
+Text Label 2500 2550 0    60   ~ 0
+~CE1
+Wire Wire Line
+	2500 2650 2700 2650
+Text Label 2500 2650 0    60   ~ 0
+A0
+Wire Wire Line
+	2500 2750 2700 2750
+Text Label 2500 2750 0    60   ~ 0
+A1
+$Comp
+L Z8440 U?
+U 1 1 58C06E12
+P 3500 6100
+F 0 "U?" H 3450 4650 60  0000 C CNN
+F 1 "Z8440" H 3500 6200 60  0000 C CNN
+F 2 "DIP-40__600_ELL" H 3500 7450 60  0000 C CNN
+F 3 "" H 2850 6700 60  0000 C CNN
+	1    3500 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P?
+U 1 1 58C0708F
+P 1300 6950
+F 0 "P?" H 1300 7200 50  0000 C CNN
+F 1 "Interrupt Daisy Chain SIO" V 1400 6950 50  0000 C CNN
+F 2 "" H 1300 6950 50  0000 C CNN
+F 3 "" H 1300 6950 50  0000 C CNN
+	1    1300 6950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 6700 2100 6700
+Wire Wire Line
+	2100 6700 2100 7000
+Wire Wire Line
+	2100 7000 1500 7000
+Wire Wire Line
+	2700 6800 1500 6800
+Wire Wire Line
+	2700 6900 1500 6900
+Wire Wire Line
+	1600 7100 1500 7100
+Text Label 1600 7100 0    60   ~ 0
+VCC
+$Comp
+L CONN_02X10 P?
+U 1 1 58C07356
+P 6200 5350
+F 0 "P?" H 6200 5900 50  0000 C CNN
+F 1 "CONN_02X10" V 6200 5350 50  0000 C CNN
+F 2 "" H 6200 4150 50  0000 C CNN
+F 3 "" H 6200 4150 50  0000 C CNN
+	1    6200 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 10k
+U 1 1 58C0765F
+P 4500 4550
+F 0 "10k" V 4580 4550 50  0000 C CNN
+F 1 "R" V 4500 4550 50  0000 C CNN
+F 2 "" V 4430 4550 50  0000 C CNN
+F 3 "" H 4500 4550 50  0000 C CNN
+	1    4500 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 10k
+U 1 1 58C0777D
+P 4700 4550
+F 0 "10k" V 4780 4550 50  0000 C CNN
+F 1 "R" V 4700 4550 50  0000 C CNN
+F 2 "" V 4630 4550 50  0000 C CNN
+F 3 "" H 4700 4550 50  0000 C CNN
+	1    4700 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 10k
+U 1 1 58C077CF
+P 4900 4550
+F 0 "10k" V 4980 4550 50  0000 C CNN
+F 1 "R" V 4900 4550 50  0000 C CNN
+F 2 "" V 4830 4550 50  0000 C CNN
+F 3 "" H 4900 4550 50  0000 C CNN
+	1    4900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 10k
+U 1 1 58C07810
+P 5100 4550
+F 0 "10k" V 5180 4550 50  0000 C CNN
+F 1 "R" V 5100 4550 50  0000 C CNN
+F 2 "" V 5030 4550 50  0000 C CNN
+F 3 "" H 5100 4550 50  0000 C CNN
+	1    5100 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 10k
+U 1 1 58C0784F
+P 5300 4550
+F 0 "10k" V 5380 4550 50  0000 C CNN
+F 1 "R" V 5300 4550 50  0000 C CNN
+F 2 "" V 5230 4550 50  0000 C CNN
+F 3 "" H 5300 4550 50  0000 C CNN
+	1    5300 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 4400
+Connection ~ 4900 4400
+Connection ~ 5100 4400
+Connection ~ 4500 4400
+$Comp
+L VCC #PWR?
+U 1 1 58C07A3C
+P 5400 4400
+F 0 "#PWR?" H 5400 4250 50  0001 C CNN
+F 1 "VCC" H 5400 4550 50  0000 C CNN
+F 2 "" H 5400 4400 50  0000 C CNN
+F 3 "" H 5400 4400 50  0000 C CNN
+	1    5400 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5000 5950 5000
+Wire Wire Line
+	4500 5000 4500 4700
+Wire Wire Line
+	4350 5200 5950 5200
+Wire Wire Line
+	4700 5200 4700 4700
+Wire Wire Line
+	4350 5300 5950 5300
+Wire Wire Line
+	4900 5300 4900 4700
+Wire Wire Line
+	4350 5700 5100 5700
+Wire Wire Line
+	5100 5700 5100 4700
+Wire Wire Line
+	4350 5900 5300 5900
+Wire Wire Line
+	5300 5900 5300 4700
+Wire Wire Line
+	4350 4900 5950 4900
+Connection ~ 4500 5000
+Wire Wire Line
+	4350 5100 5950 5100
+Connection ~ 4700 5200
+Connection ~ 4900 5300
+Wire Wire Line
+	4350 5400 5950 5400
+Wire Wire Line
+	4350 5600 5000 5600
+Wire Wire Line
+	5000 5600 5000 5500
+Wire Wire Line
+	5000 5500 5950 5500
+Wire Wire Line
+	5100 5600 5950 5600
+Connection ~ 5100 5600
+Wire Wire Line
+	4350 5800 5200 5800
+Wire Wire Line
+	5200 5800 5200 5700
+Wire Wire Line
+	5200 5700 5950 5700
+Wire Wire Line
+	5300 5800 5950 5800
+Connection ~ 5300 5800
+$Comp
+L R 10k?
+U 1 1 58C0819B
+P 5750 4550
+F 0 "10k?" V 5830 4550 50  0000 C CNN
+F 1 "R" V 5750 4550 50  0000 C CNN
+F 2 "" V 5680 4550 50  0000 C CNN
+F 3 "" H 5750 4550 50  0000 C CNN
+	1    5750 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58C081FB
+P 5950 4400
+F 0 "#PWR?" H 5950 4150 50  0001 C CNN
+F 1 "GND" H 5950 4250 50  0000 C CNN
+F 2 "" H 5950 4400 50  0000 C CNN
+F 3 "" H 5950 4400 50  0000 C CNN
+	1    5950 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4700 5750 4900
+Connection ~ 5750 4900
+Wire Wire Line
+	5750 4400 5950 4400
+Wire Wire Line
+	4500 4400 5400 4400
+Connection ~ 5300 4400
+$EndSCHEMATC
