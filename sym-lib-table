@@ -1,4 +1,5 @@
 (sym_lib_table
-  (version 0)
+  (version 7)
   (lib (name "z80-rescue")(type "Legacy")(uri "${KIPRJMOD}/z80-rescue.lib")(options "")(descr ""))
+  (lib (name "z80-ownSymbols")(type "KiCad")(uri "${KIPRJMOD}/z80-ownSymbols.kicad_sym")(options "")(descr ""))
 )
