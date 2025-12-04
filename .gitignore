@@ -3,3 +3,4 @@ z80-backups
 *.kicad_sch-bak
 _autosave*
 fp-info-cache
+fabrication

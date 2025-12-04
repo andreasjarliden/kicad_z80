@@ -33,7 +33,7 @@
 		(tenting front back)
 		(grid_origin 25.4 152.4)
 		(pcbplotparams
-			(layerselection 0x00000000_00000000_00000000_000000a5)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
@@ -66,10 +66,10 @@
 			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
-			(mirror yes)
-			(drillshape 2)
+			(mirror no)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "/Users/andreas/Desktop/")
+			(outputdirectory "fabrication/")
 		)
 	)
 	(net 0 "")
@@ -14022,6 +14022,18 @@
 		(at 125.095 226.695 90)
 		(layer "F.SilkS")
 		(uuid "77a840a1-b782-4887-8ec9-2ae1f198d52d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Z80 CPU Card v1.0 2025-12-01"
+		(at 29.845 234.315 0)
+		(layer "F.SilkS")
+		(uuid "8578eb8c-e2a3-4ae1-8559-c0b90acd92f4")
 		(effects
 			(font
 				(size 1 1)
